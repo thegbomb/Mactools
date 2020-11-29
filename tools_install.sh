@@ -7,12 +7,40 @@
 sudo xcodebuild -license
 xcode-select --install
 
+mkdir ~/.ssh && touch ~/.ssh/config
+ssh-keygen -t rsa -b 4096 -C "email@here.com"
+ssh-add -K ~/.ssh/id_rsa
+nano ~/.ssh/config
+
+# install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install ansible composer drush git npm nvm php@7.3
-brew tap caskroom/cask
-brew cask install chromedriver firefox meld netbeans phpstorm sourcetree virtualbox vagrant
+brew tap homebrew/cask
+
+brew update
+brew doctor
+
+brew install wget curl
+brew install php@7.3 git composer drush
+brew install mysql sqlite
+brew install ansible npm nvm
+
+# Browsers
+brew install --cask firefox chromedriver 
+brew install --cask lastpass
+
+# Dev IDE
+brew install --cask atom netbeans phpstorm
+
+# Productivity
+brew install --cask meld sourcetree
+brew install --cask virtualbox vagrant
+
+# Collaboration tools
+brew install --cask slack
 
 curl -OL https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar
 chmod +x drush.phar
 sudo mv drush.phar /usr/local/bin/drush
 drush self-update
+
+brew cleanup
