@@ -43,6 +43,9 @@ brew install --cask virtualbox vagrant
 # Collaboration tools
 brew install --cask slack
 
+# Notes tools
+brew install --cask evernote skitch
+
 curl -OL https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar
 chmod +x drush.phar
 sudo mv drush.phar /usr/local/bin/drush
