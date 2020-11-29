@@ -20,7 +20,7 @@ brew update
 brew doctor
 
 brew install wget curl
-brew install php@7.3 git composer drush
+brew install php@7.3 git composer
 brew install mysql sqlite
 brew install ansible npm nvm
 
