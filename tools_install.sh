@@ -39,6 +39,7 @@ brew install --cask atom netbeans phpstorm
 # Productivity
 brew install --cask meld sourcetree
 brew install --cask virtualbox vagrant
+brew install --cask dropbox
 
 # Collaboration tools
 brew install --cask slack
