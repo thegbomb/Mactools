@@ -24,6 +24,9 @@ brew install php@7.3 git composer
 brew install mysql sqlite
 brew install ansible npm nvm
 
+brew install ruby
+sudo gem install compass
+
 # Browsers
 brew install --cask firefox chromedriver 
 brew install --cask lastpass
