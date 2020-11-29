@@ -29,6 +29,8 @@ brew install --cask firefox chromedriver
 brew install --cask lastpass
 
 # Dev IDE
+brew install java
+sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 brew install --cask atom netbeans phpstorm
 
 # Productivity
