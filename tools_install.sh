@@ -45,6 +45,7 @@ brew install --cask slack
 
 # Notes tools
 brew install --cask evernote skitch
+brew install --cask imageoptim
 
 curl -OL https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar
 chmod +x drush.phar
