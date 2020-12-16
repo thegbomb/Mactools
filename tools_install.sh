@@ -43,10 +43,15 @@ brew install --cask dropbox
 
 # Collaboration tools
 brew install --cask slack
+brew install --cask zoom
+brew install --cask microsoft-teams
 
 # Notes tools
 brew install --cask evernote skitch
+
+# Others
 brew install --cask imageoptim
+brew install --cask spotify
 
 curl -OL https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar
 chmod +x drush.phar
