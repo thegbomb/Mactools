@@ -24,6 +24,14 @@ brew install php@7.3 git composer
 brew install mysql sqlite
 brew install ansible npm nvm
 
+mkdir ~/.nvm
+cat >> "~/.zshrc" <<END
+export NVM_DIR="$HOME/.nvm"
+[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
+[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+END
+cat "~/.zshrc"
+
 brew install ruby
 sudo gem install compass
 
