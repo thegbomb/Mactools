@@ -6,7 +6,10 @@
 
 brew update-reset && brew update && brew upgrade
 # brew cask upgrade
-brew upgrade --cask
+# brew upgrade --cask
+brew update
+brew outdated
+brew upgrade
 npm update -g
 npm install -g npm
 export COMPOSER_PROCESS_TIMEOUT=2000
