@@ -4,12 +4,9 @@
 #          Update script to keep command line tools updated
 # ------------------------------------------------------------------
 
-brew update-reset && brew update && brew upgrade
+brew update-reset && brew update && brew outdated && brew upgrade
 # brew cask upgrade
 # brew upgrade --cask
-brew update
-brew outdated
-brew upgrade
 npm update -g
 npm install -g npm
 export COMPOSER_PROCESS_TIMEOUT=2000
