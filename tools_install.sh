@@ -4,6 +4,7 @@
 #          Script to install command line tools
 # ------------------------------------------------------------------
 
+cd ~
 sudo xcodebuild -license
 xcode-select --install
 
@@ -22,7 +23,9 @@ brew doctor
 brew install wget curl
 brew install php@7.3 git composer
 brew install mysql sqlite
-brew install ansible npm nvm
+brew install ansible@2.9 npm nvm
+brew install java
+sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 
 mkdir ~/.nvm
 cat >> "~/.zshrc" <<END
@@ -40,13 +43,13 @@ brew install --cask firefox chromedriver
 brew install --cask lastpass
 
 # Dev IDE
-brew install java
-sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 brew install --cask atom netbeans phpstorm
 
 # Productivity
 brew install --cask meld sourcetree
 brew install --cask virtualbox vagrant
+brew install docker
+brew install --cask lando
 brew install --cask dropbox
 
 # Collaboration tools
@@ -67,3 +70,4 @@ sudo mv drush.phar /usr/local/bin/drush
 drush self-update
 
 brew cleanup
+cd -
