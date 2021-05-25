@@ -46,7 +46,7 @@ brew install --cask lastpass
 brew install --cask atom netbeans phpstorm
 
 # Productivity
-brew install --cask meld sourcetree
+brew install --cask meld sourcetree postman
 brew install --cask virtualbox vagrant
 brew install docker
 brew install --cask lando
