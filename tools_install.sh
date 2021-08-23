@@ -56,6 +56,7 @@ brew install drud/ddev/ddev
 # Productivity
 brew install --cask meld sourcetree postman
 brew install --cask dropbox
+brew install --cask google-drive
 
 # Collaboration tools
 brew install --cask slack
