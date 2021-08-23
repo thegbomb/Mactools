@@ -24,8 +24,10 @@ brew install wget curl
 brew install php@7.3 git composer
 brew install mysql sqlite
 brew install ansible@2.9 npm nvm
-brew install java
-sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+
+# Java (if required)
+# brew install java
+# sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 
 mkdir ~/.nvm
 cat >> "~/.zshrc" <<END
@@ -45,11 +47,14 @@ brew install --cask lastpass
 # Dev IDE
 brew install --cask atom netbeans phpstorm
 
+# Local development environments
+brew install --cask virtualbox vagrant
+brew install docker docker-compose
+brew install --cask lando
+brew install drud/ddev/ddev
+
 # Productivity
 brew install --cask meld sourcetree postman
-brew install --cask virtualbox vagrant
-brew install docker
-brew install --cask lando
 brew install --cask dropbox
 
 # Collaboration tools
@@ -63,6 +68,10 @@ brew install --cask evernote skitch
 # Others
 brew install --cask imageoptim
 brew install --cask spotify
+
+# Code inspection tools
+# https://gist.github.com/hassanjamal/c868f8808c06c4acfcf717c0b5bb01e1
+brew install php-code-sniffer phpcs
 
 curl -OL https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar
 chmod +x drush.phar
