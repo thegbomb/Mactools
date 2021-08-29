@@ -62,6 +62,7 @@ brew install --cask google-drive
 brew install --cask slack
 brew install --cask zoom
 brew install --cask microsoft-teams
+brew install --cask microsoft-outlook
 
 # Notes tools
 brew install --cask evernote skitch
