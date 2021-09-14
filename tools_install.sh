@@ -42,14 +42,14 @@ sudo gem install compass
 
 # Browsers
 brew install --cask firefox chromedriver 
-brew install --cask lastpass
+brew install --cask lastpass 1Password
 
 # Dev IDE
 brew install --cask atom netbeans phpstorm
 
 # Local development environments
 brew install --cask virtualbox vagrant
-brew install docker docker-compose
+brew install --cask docker
 brew install --cask lando
 brew install drud/ddev/ddev
 
