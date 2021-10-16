@@ -21,7 +21,7 @@ brew update
 brew doctor
 
 brew install wget curl
-brew install php@7.4 php8.0 git composer
+brew install php@7.4 php@8.0 git composer
 brew install mariahdb sqlite
 brew install ansible@2.9 npm nvm
 
