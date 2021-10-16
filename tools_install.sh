@@ -14,15 +14,15 @@ ssh-add -K ~/.ssh/id_rsa
 nano ~/.ssh/config
 
 # install homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew tap homebrew/cask
 
 brew update
 brew doctor
 
 brew install wget curl
-brew install php@7.3 git composer
-brew install mysql sqlite
+brew install php@7.4 php8.0 git composer
+brew install mariahdb sqlite
 brew install ansible@2.9 npm nvm
 
 # Java (if required)
