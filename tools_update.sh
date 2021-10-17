@@ -9,7 +9,7 @@ git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask fetch --unshallow
 brew update-reset && brew update && brew upgrade
 brew outdated
 brew upgrade --cask
-brew list --cask | xargs brew upgrade
+brew list --cask | xargs brew upgrade --cask
 npm update -g
 npm install -g npm
 export COMPOSER_PROCESS_TIMEOUT=2000
