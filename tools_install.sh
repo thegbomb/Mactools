@@ -73,7 +73,7 @@ brew install --cask spotify
 
 # Code inspection tools
 # https://gist.github.com/hassanjamal/c868f8808c06c4acfcf717c0b5bb01e1
-brew install php-code-sniffer phpcs
+brew install php-code-sniffer php-cs-fixer
 
 curl -OL https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar
 chmod +x drush.phar
