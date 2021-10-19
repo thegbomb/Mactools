@@ -37,6 +37,7 @@ brew install ansible@2.9 npm nvm
 # sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 
 mkdir ~/.nvm
+touch ~/.zshrc
 cat >> "~/.zshrc" <<END
 export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
