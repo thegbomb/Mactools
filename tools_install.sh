@@ -8,10 +8,17 @@ cd ~
 sudo xcodebuild -license
 xcode-select --install
 
+# https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 mkdir ~/.ssh && touch ~/.ssh/config
 ssh-keygen -t rsa -b 4096 -C "email@here.com"
+cat >> "~/.ssh/config" <<END
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+END
 ssh-add -K ~/.ssh/id_rsa
-nano ~/.ssh/config
+cat ~/.ssh/config
 
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
