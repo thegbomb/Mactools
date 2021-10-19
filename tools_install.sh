@@ -58,6 +58,7 @@ brew install --cask atom netbeans phpstorm
 # Local development environments
 brew install --cask virtualbox vagrant
 brew install --cask docker
+open -a /Applications/Docker.app
 brew install --cask lando
 brew install drud/ddev/ddev
 
