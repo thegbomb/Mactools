@@ -78,6 +78,7 @@ brew install --cask microsoft-outlook
 brew install --cask evernote skitch
 
 # Others
+brew install --cask adobe-acrobat-reader
 brew install --cask imageoptim
 brew install --cask spotify
 
