@@ -28,8 +28,9 @@ brew update
 brew doctor
 
 brew install wget curl
-brew install php@7.4 git composer
-brew unlink php && brew link --overwrite --force php@7.4
+brew install php@7.4 php@8.0 git composer
+# brew unlink php && brew link --overwrite --force php@7.4
+brew unlink php && brew link --overwrite --force php@8.0
 brew install mariadb sqlite
 brew install ansible@2.9 npm nvm
 
@@ -57,10 +58,10 @@ brew install --cask lastpass 1Password
 brew install --cask atom netbeans phpstorm
 
 # Local development environments
-brew install --cask virtualbox vagrant
+# brew install --cask virtualbox vagrant
 brew install --cask docker
 open -a /Applications/Docker.app
-brew install --cask lando
+# brew install --cask lando
 brew install drud/ddev/ddev
 
 # Productivity
@@ -80,6 +81,7 @@ brew install --cask evernote skitch
 # Others
 brew install --cask adobe-acrobat-reader
 brew install --cask imageoptim
+brew install --cask tableplus
 brew install --cask spotify
 
 # Code inspection tools
