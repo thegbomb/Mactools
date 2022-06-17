@@ -10,19 +10,30 @@ brew update-reset && brew update && brew upgrade
 brew outdated
 brew upgrade --cask
 brew list --cask | xargs brew upgrade --cask
+
+# Check then relink php
+php -v
+brew unlink php && brew link --overwrite --force php@7.4
+php -v
+brew unlink php && brew link --overwrite --force php@8.0
+php -v
+brew services restart php
 npm update -g
 npm install -g npm
+ulimit -n 10000
 export COMPOSER_PROCESS_TIMEOUT=2000
+export COMPOSER_MEMORY_LIMIT=-1
 composer selfupdate
 # composer selfupdate --2
 # composer selfupdate --1
 composer clear-cache
-composer config -g disable-tls true
-composer config -g secure-http false
+# composer config -g disable-tls true
+# composer config -g secure-http false
 composer global update
 # composer config -g disable-tls false
 # composer config -g secure-http true
-vagrant box prune --keep-active-boxes
+# vagrant box prune --keep-active-boxes
+drush self-update
 cd -
 
 # Open the tools in case they have been remove from the dock
@@ -30,7 +41,7 @@ open -a /Applications/Google\ Chrome.app
 open -a /Applications/Firefox.app
 open -a /Applications/PhpStorm.app
 open -a /Applications/Atom.app/
-open -a /Applications/Visual\ Studio\ Code.app
+# open -a /Applications/Visual\ Studio\ Code.app
 open -a /Applications/Meld.app
 open -a /Applications/Sourcetree.app
 # open -a /Applications/Utilities/Terminal.app
@@ -39,5 +50,10 @@ open -a /Applications/zoom.us.app
 open -a /Applications/Spotify.app
 open -a /Applications/Docker.app
 open -a /Applications/Postman.app
-open -a /Applications/Virtualbox.app
+open -a /Applications/TablePlus.app
+# open -a /Applications/Virtualbox.app
+open -a /Applications/Dropbox.app
 open -a /Applications/Google\ Drive.app
+open -a /Applications/Microsoft\ Outlook.app
+# open -a /Applications/Clickup.app
+open -a /Applications/Screaming\ Frog\ SEO\ Spider.app
