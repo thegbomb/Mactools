@@ -82,6 +82,7 @@ brew install --cask evernote skitch
 brew install --cask adobe-acrobat-reader
 brew install --cask imageoptim
 brew install --cask tableplus
+brew install --cask screaming-frog-seo-spider
 brew install --cask spotify
 
 # Code inspection tools
