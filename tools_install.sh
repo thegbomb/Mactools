@@ -55,7 +55,7 @@ brew install --cask firefox chromedriver
 brew install --cask lastpass 1Password
 
 # Dev IDE
-brew install --cask atom netbeans phpstorm
+brew install --cask atom netbeans phpstorm visual-studio-code
 
 # Local development environments
 # brew install --cask virtualbox vagrant
