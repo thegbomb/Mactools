@@ -20,6 +20,20 @@ php -v
 brew services restart php
 npm update -g
 npm install -g npm
+
+export NVM_DIR=$HOME/.nvm;
+source $NVM_DIR/nvm.sh;
+
+nvm install 18
+nvm use 18
+node -v
+nvm install 16
+nvm use 16
+node -v
+nvm install 12
+nvm use 12
+node -v
+
 ulimit -n 10000
 export COMPOSER_PROCESS_TIMEOUT=2000
 export COMPOSER_MEMORY_LIMIT=-1
