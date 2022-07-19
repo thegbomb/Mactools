@@ -34,18 +34,23 @@ brew unlink php && brew link --overwrite --force php@8.0
 brew install mariadb sqlite
 brew install ansible@2.9 npm nvm
 
-# Java (if required)
-# brew install java
-# sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
-
 mkdir ~/.nvm
-touch ~/.zshrc
-cat >> "~/.zshrc" <<END
+
+cat >> ~/.bash_profile <<END
 export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
 [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 END
-cat "~/.zshrc"
+cat ~/.bash_profile
+
+touch ~/.zshrc
+cat >> ~/.zshrc <<END
+if [ -f ~/.bash_profile ]; then
+    . ~/.bash_profile;
+fi
+END
+source ~/.zshrc
+cat ~/.zshrc
 
 brew install ruby
 sudo gem install compass
@@ -54,8 +59,13 @@ sudo gem install compass
 brew install --cask firefox chromedriver 
 brew install --cask lastpass 1Password
 
-# Dev IDE
-brew install --cask atom netbeans phpstorm visual-studio-code
+# Dev IDEs
+brew install --cask atom phpstorm visual-studio-code
+
+# Java (if required)
+brew install openjdk
+echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> ~/.bash_profile
+brew install --cask netbeans
 
 # Local development environments
 # brew install --cask virtualbox vagrant
