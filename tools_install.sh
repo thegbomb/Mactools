@@ -56,7 +56,7 @@ brew install ruby
 sudo gem install compass
 
 # Browsers
-brew install --cask firefox chromedriver 
+brew install --cask firefox chromedriver microsoft-edge
 brew install --cask lastpass 1Password
 
 # Dev IDEs
