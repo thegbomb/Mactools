@@ -15,9 +15,9 @@ brew list --cask | xargs brew upgrade --cask
 php -v
 brew unlink php && brew link --overwrite --force php@7.4
 php -v
-brew unlink php && brew link --overwrite --force php@8.1
-php -v
 brew unlink php && brew link --overwrite --force php@8.0
+php -v
+brew unlink php && brew link --overwrite --force php@8.1
 php -v
 brew services restart php
 npm update -g
@@ -50,6 +50,7 @@ composer global update
 # composer config -g secure-http true
 # vagrant box prune --keep-active-boxes
 drush self-update
+blt self-update
 cd -
 
 # Open the tools in case they have been remove from the dock
