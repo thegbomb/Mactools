@@ -117,10 +117,17 @@ brew install --cask spotify
 # https://gist.github.com/hassanjamal/c868f8808c06c4acfcf717c0b5bb01e1
 brew install php-code-sniffer php-cs-fixer
 
+# Launchers
+# https://github.com/drush-ops/drush-launcher
 curl -OL https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar
 chmod +x drush.phar
 sudo mv drush.phar /usr/local/bin/drush
 drush self-update
+
+# https://github.com/acquia/blt-launcher
+curl -OL https://github.com/acquia/blt-launcher/releases/latest/download/blt.phar
+chmod +x blt.phar
+sudo mv blt.phar /usr/local/bin/blt
 
 brew cleanup
 cd -
