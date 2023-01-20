@@ -10,7 +10,10 @@ xcode-select --install
 
 # https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 mkdir ~/.ssh && touch ~/.ssh/config
-ssh-keygen -t rsa -b 4096 -C "email@here.com"
+# ssh-keygen -t ed25519 -C "email@here.com"
+# ssh-keygen -t rsa -b 4096 -C "email@here.com"
+ssh-keygen -b 4096 -C "email@here.com"
+
 cat >> "~/.ssh/config" <<END
 Host *.acquia-sites.com
    HostKeyAlgorithms=+ssh-rsa
@@ -34,6 +37,7 @@ ssh-keygen -l -E md5 -f ~/.ssh/id_rsa.pub
 # ssh -T git@bitbucket.org
 # ssh -T git@github.com
 # ssh -T git@git.drupal.org
+# ssh -T {{project_name}}@{{repo-id}}.prod.hosting.acquia.com
 
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -45,7 +49,7 @@ brew doctor
 brew install wget curl
 brew install php@7.4 php@8.0 php@8.1 git composer
 # brew unlink php && brew link --overwrite --force php@7.4
-brew unlink php && brew link --overwrite --force php@8.0
+brew unlink php && brew link --overwrite --force php@8.1
 brew install mariadb sqlite
 brew install ansible@2.9 npm nvm
 
