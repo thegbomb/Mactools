@@ -129,5 +129,14 @@ curl -OL https://github.com/acquia/blt-launcher/releases/latest/download/blt.pha
 chmod +x blt.phar
 sudo mv blt.phar /usr/local/bin/blt
 
+# Installing Acquia CLI
+# https://docs.acquia.com/acquia-cli/install/
+curl -OL https://github.com/acquia/cli/releases/latest/download/acli.phar
+chmod +x acli.phar
+mv acli.phar /usr/local/bin/acli
+# Create a Cloud Platform API token at https://cloud.acquia.com/a/profile/tokens
+acli auth:login
+acli self-update --stable
+
 brew cleanup
 cd -
