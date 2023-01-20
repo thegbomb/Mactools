@@ -51,6 +51,8 @@ composer global update
 # vagrant box prune --keep-active-boxes
 drush self-update
 blt self-update
+acli self-update --stable
+
 cd -
 
 # Open the tools in case they have been remove from the dock
