@@ -47,7 +47,9 @@ brew update
 brew doctor
 
 brew install wget curl
-brew install php@7.4 php@8.0 php@8.1 git composer
+brew tap shivammathur/php
+brew install shivammathur/php/php@7.4
+brew install php@8.1 php@8.2 git composer
 # brew unlink php && brew link --overwrite --force php@7.4
 brew unlink php && brew link --overwrite --force php@8.1
 brew install mariadb sqlite
