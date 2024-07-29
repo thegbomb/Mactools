@@ -146,3 +146,21 @@ acli self-update --stable
 
 brew cleanup
 cd -
+
+# Consider these browser extensions
+#1Password – Password Manager
+#The best way to experience 1Password in your browser. Easily sign in to sites, generate passwords, and store secure information.
+#AWS Extend Switch Roles
+#Extend your AWS IAM switching roles. You can set the configuration like aws config format
+#axe DevTools - Web Accessibility Testing
+#Accessibility Checker for Developers, Testers, and Designers in Chrome
+#Consent-O-Matic
+#Automatic handling of GDPR consent forms
+#CSP Evaluator
+#CSP Evaluator is a tool that allows developers to check if a Content Security Policy (CSP) serves as mitigation against XSS attacks.
+#DrupalPod helper extension
+#This extension sets up a development environment for Drupal contributions.
+#Google Docs Offline
+#Edit, create and view your documents, spreadsheets and presentations – all without Internet access.
+#Window Resizer
+#Resize the browser window to emulate various screen resolutions.
