@@ -15,7 +15,7 @@ brew list --cask | xargs brew upgrade --cask
 php -v
 brew unlink php && brew link --overwrite --force php@7.4
 php -v
-brew unlink php && brew link --overwrite --force php@8.0
+brew unlink php && brew link --overwrite --force php@8.2
 php -v
 brew unlink php && brew link --overwrite --force php@8.1
 php -v
@@ -60,7 +60,8 @@ open -a /Applications/Google\ Chrome.app
 open -a /Applications/Firefox.app
 open -a /Applications/Microsoft\ Edge.app
 open -a /Applications/PhpStorm.app
-open -a /Applications/Atom.app/
+open -a /Applications/Pulsar.app/
+# open -a /Applications/Atom.app/
 # open -a /Applications/Visual\ Studio\ Code.app
 open -a /Applications/Meld.app
 open -a /Applications/Sourcetree.app
