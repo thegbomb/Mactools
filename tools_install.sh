@@ -81,7 +81,7 @@ brew install --cask firefox chromedriver microsoft-edge
 brew install --cask lastpass 1Password
 
 # Dev IDEs
-brew install --cask atom phpstorm visual-studio-code
+brew install --cask pulsar phpstorm visual-studio-code
 
 # Java (if required)
 brew install openjdk
