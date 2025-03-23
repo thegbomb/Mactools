@@ -78,6 +78,8 @@ sudo gem install compass
 
 # Browsers
 brew install --cask firefox chromedriver microsoft-edge
+# brew install --cask chromedriver
+brew install --cask google-chrome
 brew install --cask lastpass 1Password
 
 # Dev IDEs
@@ -115,9 +117,19 @@ brew install --cask adobe-acrobat-reader
 brew install --cask imageoptim
 brew install --cask sequel-ace
 # brew install --cask tableplus
+brew install --cask postman
 brew install --cask screaming-frog-seo-spider
 brew install --cask grammarly
 brew install --cask spotify
+
+# Optional tools
+brew install --cask colour-contrast-analyser
+brew install --cask git-credential-manager
+brew install --cask obs
+brew install --cask openvpn-connect
+brew install --cask shottr
+brew install --cask stats
+brew install --cask vlc
 
 # Code inspection tools
 # https://gist.github.com/hassanjamal/c868f8808c06c4acfcf717c0b5bb01e1
@@ -125,15 +137,15 @@ brew install php-code-sniffer php-cs-fixer
 
 # Launchers
 # https://github.com/drush-ops/drush-launcher
-curl -OL https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar
-chmod +x drush.phar
-sudo mv drush.phar /usr/local/bin/drush
-drush self-update
+#curl -OL https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar
+#chmod +x drush.phar
+#sudo mv drush.phar /usr/local/bin/drush
+#drush self-update
 
 # https://github.com/acquia/blt-launcher
-curl -OL https://github.com/acquia/blt-launcher/releases/latest/download/blt.phar
-chmod +x blt.phar
-sudo mv blt.phar /usr/local/bin/blt
+#curl -OL https://github.com/acquia/blt-launcher/releases/latest/download/blt.phar
+#chmod +x blt.phar
+#sudo mv blt.phar /usr/local/bin/blt
 
 # Installing Acquia CLI
 # https://docs.acquia.com/acquia-cli/install/
