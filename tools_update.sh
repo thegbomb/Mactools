@@ -5,11 +5,13 @@
 # ------------------------------------------------------------------
 
 cd ~
-git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask fetch --unshallow
+cd $(brew --repo); git fetch; git reset --hard origin/master;
+# git -C /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask fetch --unshallow
 brew update-reset && brew update && brew upgrade
 brew outdated
 brew upgrade --cask
 brew list --cask | xargs brew upgrade --cask
+cd ~
 
 # Check then relink php
 php -v
