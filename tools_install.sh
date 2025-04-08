@@ -102,14 +102,19 @@ brew install drud/ddev/ddev
 brew install --cask meld sourcetree postman
 brew install --cask dropbox
 brew install --cask google-drive
+brew install --cask onedrive
 
 # Collaboration tools
 brew install --cask slack
 brew install --cask zoom
 brew install --cask microsoft-teams
 brew install --cask microsoft-outlook
+brew install --cask microsoft-word
+brew install --cask microsoft-word
+brew install --cask microsoft-excel
 
 # Notes tools
+brew install --cask microsoft-onenote
 brew install --cask evernote skitch
 
 # Others
