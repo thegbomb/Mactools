@@ -124,7 +124,7 @@ brew install --cask sequel-ace
 # brew install --cask tableplus
 brew install --cask postman
 brew install --cask screaming-frog-seo-spider
-brew install --cask grammarly
+brew install --cask grammarly-desktop
 brew install --cask spotify
 
 # Optional tools
