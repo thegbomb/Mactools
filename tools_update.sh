@@ -82,7 +82,7 @@ open -a /Applications/Dropbox.app
 open -a /Applications/Google\ Drive.app
 # open -a /Applications/Microsoft\ Word.app
 # open -a /Applications/Microsoft\ Excel.app
-open -a /Applications/Grammarly\ Editor.app
+open -a /Applications/Grammarly\ Desktop.app
 # open -a /Applications/Clickup.app
 open -a /Applications/Screaming\ Frog\ SEO\ Spider.app
 open -a /Applications/Stats.app
