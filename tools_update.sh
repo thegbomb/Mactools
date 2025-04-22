@@ -75,6 +75,7 @@ open -a /Applications/Pulsar.app/
 # open -a /Applications/Meld.app
 # open -a /Applications/Sourcetree.app
 # open -a /Applications/Utilities/Terminal.app
+open -a /Applications/1Password.app
 open -a /Applications/Slack.app
 open -a /Applications/zoom.us.app
 open -a /Applications/Spotify.app
