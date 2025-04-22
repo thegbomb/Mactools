@@ -13,13 +13,18 @@ brew upgrade --cask
 brew list --cask | xargs brew upgrade --cask
 cd ~
 
+echo "Currently installed:"
+brew info --cask --json=v2 $(brew list --cask) | jq -r '.[] | .[] | "\(.token): \(.version)"'
+
 # Check then relink php
 php -v
+brew unlink php && brew link --overwrite --force php@8.3
+#php -v
 # brew unlink php && brew link --overwrite --force php@7.4
 # php -v
-brew unlink php && brew link --overwrite --force php@8.2
-php -v
-brew unlink php && brew link --overwrite --force php@8.1
+# brew unlink php && brew link --overwrite --force php@8.2
+#php -v
+#brew unlink php && brew link --overwrite --force php@8.1
 php -v
 brew services restart php
 
