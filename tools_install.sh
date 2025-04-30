@@ -96,7 +96,7 @@ brew install --cask netbeans
 brew install --cask docker
 open -a /Applications/Docker.app
 # brew install --cask lando
-brew install drud/ddev/ddev
+brew install ddev/ddev/ddev
 
 # Productivity
 brew install --cask meld sourcetree postman
