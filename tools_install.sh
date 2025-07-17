@@ -47,22 +47,23 @@ brew update
 brew doctor
 
 brew install wget curl
-brew tap shivammathur/php
-brew install shivammathur/php/php@7.4
-brew install php@8.1 php@8.2 git composer
+# Use this if not using ddev to run php
+#brew tap shivammathur/php
+#brew install shivammathur/php/php@7.4
+#brew install php@8.1 php@8.2 git composer
 # brew unlink php && brew link --overwrite --force php@7.4
-brew unlink php && brew link --overwrite --force php@8.1
-brew install mariadb sqlite
-brew install ansible@2.9 npm nvm
+#brew unlink php && brew link --overwrite --force php@8.1
+#brew install mariadb sqlite
+#brew install ansible@2.9 npm nvm
 
-mkdir ~/.nvm
+#mkdir ~/.nvm
 
-cat >> ~/.bash_profile <<END
-export NVM_DIR="$HOME/.nvm"
-[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
-[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
-END
-cat ~/.bash_profile
+#cat >> ~/.bash_profile <<END
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
+#[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+#END
+#cat ~/.bash_profile
 
 touch ~/.zshrc
 cat >> ~/.zshrc <<END
@@ -73,8 +74,8 @@ END
 source ~/.zshrc
 cat ~/.zshrc
 
-brew install ruby
-sudo gem install compass
+#brew install ruby
+#sudo gem install compass
 
 # Browsers
 brew install --cask firefox chromedriver microsoft-edge
@@ -86,10 +87,10 @@ brew install --cask lastpass 1Password
 brew install --cask pulsar phpstorm visual-studio-code
 
 # Java (if required)
-brew install openjdk
-echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> ~/.bash_profile
-ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
-brew install --cask netbeans
+#brew install openjdk
+#echo 'export PATH="/usr/local/opt/openjdk/bin:$PATH"' >> ~/.bash_profile
+#ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+#brew install --cask netbeans
 
 # Local development environments
 # brew install --cask virtualbox vagrant
@@ -97,9 +98,12 @@ brew install --cask docker
 open -a /Applications/Docker.app
 # brew install --cask lando
 brew install ddev/ddev/ddev
+# One-time initialisation of mkcert
+mkcert -install
 
 # Productivity
-brew install --cask meld sourcetree postman
+#brew install --cask meld
+brew install --cask sourcetree postman
 brew install --cask dropbox
 brew install --cask google-drive
 brew install --cask onedrive
@@ -115,12 +119,13 @@ brew install --cask microsoft-excel
 
 # Notes tools
 brew install --cask microsoft-onenote
-brew install --cask evernote skitch
+brew install --cask evernote
+#brew install --cask skitch
 
 # Others
 brew install --cask adobe-acrobat-reader
 brew install --cask imageoptim
-brew install --cask sequel-ace
+#brew install --cask sequel-ace
 # brew install --cask tableplus
 brew install --cask postman
 brew install --cask screaming-frog-seo-spider
@@ -139,6 +144,13 @@ brew install --cask vlc
 # Code inspection tools
 # https://gist.github.com/hassanjamal/c868f8808c06c4acfcf717c0b5bb01e1
 brew install php-code-sniffer php-cs-fixer
+
+# AI tools
+# https://docs.anthropic.com/en/docs/claude-code/setup
+brew install node
+npm install -g @anthropic-ai/claude-code
+brew install --cask claude
+claude doctor
 
 # Launchers
 # https://github.com/drush-ops/drush-launcher
