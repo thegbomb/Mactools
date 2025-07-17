@@ -28,7 +28,7 @@ brew unlink php && brew link --overwrite --force php@8.3
 php -v
 brew services restart php
 
-# Remving these as hopefully they can be managed in a container
+# Removing these as they can hopefully be managed in a container
 # npm update -g
 # npm install -g npm
 
@@ -44,6 +44,10 @@ brew services restart php
 # nvm install 16
 # nvm use 16
 # node -v
+# nvm install 22
+# nvm use 22
+node -v
+npm -v
 
 ulimit -n 10000
 export COMPOSER_PROCESS_TIMEOUT=2000
@@ -62,9 +66,12 @@ composer global update
 # blt self-update
 acli self-update --stable
 
+claude update
+claude doctor
+
 cd -
 
-# Open the tools in case they have been remove from the dock
+# Open the tools in case they have been removed from the dock
 open -a /Applications/Google\ Chrome.app
 open -a /Applications/Firefox.app
 open -a /Applications/Microsoft\ Edge.app
@@ -93,11 +100,17 @@ open -a /Applications/Grammarly\ Desktop.app
 open -a /Applications/Screaming\ Frog\ SEO\ Spider.app
 open -a /Applications/Stats.app
 
-# Do this is there are issues with DDEV after updates.
-#sudo /Applications/Docker.app/Contents/MacOS/install remove-vmnetd
-#sudo /Applications/Docker.app/Contents/MacOS/install vmnetd
 
-#docker rm $(docker ps -qf 'status=exited')
-#docker rmi $(docker images -qf 'dangling=true')
-#docker rmi $(docker images | awk '/^<none>/ {print $3}')
-#docker volume rm $(docker volume ls -qf 'dangling=true')
+echo 'Consider running:'
+echo '  sudo rm -rf /Library/Developer/CommandLineTools'
+echo '  sudo xcode-select --install'
+
+echo "Do this is there are issues with DDEV after updates:"
+echo "  sudo /Applications/Docker.app/Contents/MacOS/install remove-vmnetd"
+echo "  sudo /Applications/Docker.app/Contents/MacOS/install vmnetd"
+
+echo "Do this to clean up docker:"
+echo "  docker rm $(docker ps -qf 'status=exited')"
+echo "  docker rmi $(docker images -qf 'dangling=true')"
+echo "  docker rmi $(docker images | awk '/^<none>/ {print $3}')"
+echo "  docker volume rm $(docker volume ls -qf 'dangling=true')"
