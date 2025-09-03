@@ -32,10 +32,18 @@ ssh-add -l -E md5
 ssh-keygen -l -E md5 -f ~/.ssh/id_rsa
 ssh-keygen -l -E md5 -f ~/.ssh/id_rsa.pub
 
+# Copy keys and add to ssh keys sections of various repo sites.
+# pbcopy < ~/.ssh/id_ed25519.pub
+# pbcopy < ~/.ssh/id_rsa.pub
+
 # Add keys to:
 #
+# https://bitbucket.org/account/settings/ssh-keys/
 # ssh -T git@bitbucket.org
+# https://github.com/settings/keys
 # ssh -T git@github.com
+# https://gitlab.com/-/user_settings/ssh_keys
+# ssh -T git@gitlab.com
 # ssh -T git@git.drupal.org
 # ssh -T {{project_name}}@{{repo-id}}.prod.hosting.acquia.com
 
