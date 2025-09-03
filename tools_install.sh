@@ -107,6 +107,8 @@ open -a /Applications/Docker.app
 # brew install --cask lando
 brew install ddev/ddev/ddev
 # One-time initialisation of mkcert
+brew install mkcert
+brew install nss # if you use Firefox
 mkcert -install
 
 # Productivity
